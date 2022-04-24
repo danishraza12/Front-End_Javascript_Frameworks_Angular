@@ -87,43 +87,37 @@
     <mat-spinner></mat-spinner><h4>Loading . . . Please Wait</h4>
   </div>
   
-  <mat-card *ngIf="feedback" style="display: flex;" [@expand]>
-    <mat-card-header>
-      <mat-card-title>Your Submission</mat-card-title>
-    </mat-card-header>
+  <mat-card *ngIf="feedback" [@expand]>
+    <mat-card-title>Your Submission</mat-card-title>
     <mat-card-content>
-      <table>
-        <tr>
-        </tr>
-        <tr>
-          <td><span>First Name:</span></td>
-          <td>{{feedback.firstname}}</td>
-        </tr>
-        <tr>
-          <td><span>Last Name:</span></td>
-          <td>{{feedback.lastname}}</td>
-        </tr>
-        <tr>
-          <td><span>Tel. Number:</span></td>
-          <td>{{feedback.telnum}}</td>
-        </tr>
-        <tr>
-          <td><span>Email:</span></td>
-          <td>{{feedback.email}}</td>
-        </tr>
-        <tr>
-          <td><span>Contact You?:</span></td>
-          <td>{{feedback.agree}}</td>
-        </tr>
-        <tr>
-          <td><span>How?:</span></td>
-          <td>{{feedback.contacttype}}</td>
-        </tr>
-        <tr>
-          <td><span>Feedback:</span></td>
-          <td>{{feedback.message}}</td>
-        </tr>
-      </table>
+      <div>
+        <span>First Name:</span>
+        <span>{{feedback.firstname}}</span>
+      </div>  
+      <span>
+        <p><span>Last Name:</span></p>
+        <p>{{feedback.lastname}}</p>
+      </span>
+      <span>
+        <p><span>Tel. Number:</span></p>
+        <p>{{feedback.telnum}}</p>
+      </span>
+      <span>
+        <p><span>Email:</span></p>
+        <p>{{feedback.email}}</p>
+      </span>
+      <span>
+        <p><span>Contact You?:</span></p>
+        <p>{{feedback.agree}}</p>
+      </span>
+      <span>
+        <p><span>How?:</span></p>
+        <p>{{feedback.contacttype}}</p>
+      </span>
+      <span>
+        <p><span>Feedback:</span></p>
+        <p>{{feedback.message}}</p>
+      </span>
     </mat-card-content>
   </mat-card>
 

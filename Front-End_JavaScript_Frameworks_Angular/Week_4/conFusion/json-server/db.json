@@ -213,15 +213,5 @@
     }
   ],
   "feedback": [
-    {
-      "firstname": "Danish",
-      "lastname": "Raza",
-      "telnum": "123456789",
-      "email": "abc@abc.com",
-      "agree": true,
-      "contacttype": "Email",
-      "message": "Test",
-      "id": 1
-    }
   ]
 }
